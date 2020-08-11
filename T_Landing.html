@@ -41,10 +41,14 @@
                             <a class="nav-link" href="#">تاب بوكليت <span class="sr-only">(current)</span></a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#teacher_app">تحميل تطبيق المعلم</a>
+                            <a class="nav-link" href="#teacher_app" id="teacher_app_button">تحميل تطبيق المُعلم</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#student_app">تحميل تطبيق الطالب</a>
+                            <a class="nav-link" href="#student_app" id="student_app_button">تحميل تطبيق الطالب</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#teacher-login" id="teacher_login_button"> تسجيل الدخول
+                                للمُعلم</a>
                         </li>
 
                     </ul>
@@ -188,6 +192,35 @@
                     تحميل تطبيق المعلم
                 </button>
             </div>
+
+            <hr>
+
+            <div class="login-title mb-3 mt-5 text-center text-white" id="teacher_login">
+                <h3 class="mb-2">تسجيل الدخول للمُعلم</h3>
+            </div>
+            <div class="container-fluid ">
+                <div class="row pb-5 d-flex justify-content-around ">
+                    <form class="col-10 col-sm-8 col-md-6 col-lg-4">
+                        <div class="form-group teacher-login">
+                            <div class="col-auto">
+                                <input type="text" class="form-control mb-2" id="inlineFormInput"
+                                    placeholder="اسم المستخدم">
+                            </div>
+                            <div class="col-auto">
+                                <input type="password" class="form-control mb-2" id="inlineFormInput"
+                                    placeholder="كلمة المرور">
+                            </div>
+                            <div class="col-auto text-right">
+                                <button type="submit" class="btn btn-primary mb-2">تسجيل الدخول</button>
+                            </div>
+                        </div>
+
+                        <p class="text-right text-white"> ليس لديك حساب ؟<a href="#" class="text-dark"> تسجيل حساب
+                                جديد</a></p>
+                    </form>
+                </div>
+            </div>
+
         </section>
         <!-- end of section #4 -->
 
@@ -342,6 +375,27 @@
 
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script>
+        $("#teacher_app_button").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#teacher_app").offset().top - 100
+            }, 2000);
+        });
+
+
+        $("#student_app_button").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#student_app").offset().top - 100
+            }, 2000);
+        });
+
+        $("#teacher_login_button").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#teacher_login").offset().top - 100
+            }, 2000);
+        });
+    </script>
 </body>
 
 </html>
