@@ -78,8 +78,8 @@ body {
 /* section 3 - المساعد الالكترونى */
 .s-3 {
     min-height: 60vh;
-    background-image: url(../assets/man-standing-inside-room-31846422.jpg);
-    background-position: left;
+    background-image: url(../assets/117319673_1023588028098237_4527082381331571325_n.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -206,6 +206,7 @@ body {
     color: white;
     width: 250px;
     border-radius: 30px;
+    border: 1px solid blueviolet;
 }
 
 /* End of section #6 */
